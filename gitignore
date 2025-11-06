@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints
+
+# Models
+*.h5
+*.hdf5
+
+# Data
+data/
+*.mp4
+*.avi
+*.mov
+*.jpg
+*.jpeg
+*.png
+
+# Results
+results/*.png
+results/*.json
+!results/.gitkeep
+
+# Logs
+logs/
+*.log
+
+# Models (keep structure)
+models/*.h5
+models/*.json
+!models/.gitkeep

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake Detector</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Deepfake Detector</h1>
+            <p>Upload an image or video to check if it's real or fake.</p>
+        </header>
+
+        <form id="upload-form">
+            <label for="file-input" class="upload-area" id="upload-label">
+                <div class="icon">🖼️</div>
+                <p><strong>Click to browse</strong> or drag and drop</p>
+                <p>Supports: .jpg, .png, .mp4, .mov</p>
+            </label>
+            <input type="file" id="file-input" accept="image/jpeg,image/png,video/mp4,video/quicktime,video/x-msvideo">
+            <p id="file-name">No file selected</p>
+            <button type="submit" id="detect-button" disabled>Detect</button>
+        </form>
+
+        <div class="spinner" id="spinner"></div>
+
+        <div class="results" id="results-area">
+            </div>
+    </div>
+
+</body>
+</html>
